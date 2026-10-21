@@ -160,7 +160,7 @@
                 class="form-control"
                 inputmode ="numeric"
                 value="{{ $user->nohp }}"
-                oninput="this.value = this.value.replace(/[^0-8]/g, '')">
+                oninput="this.value = this.value.replace(/[^0-9]/g, '')">
                 
         </div>
     </div>
