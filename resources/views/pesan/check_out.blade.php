@@ -71,19 +71,19 @@
                             </td>
 
                             <td>
-                                {{ $pesanan_detail->barang->nama_barang }}
+                                {{ $pesanan_detail->barang->nama_barang ?? 'barang sudah tidak tersedia' }}
                             </td>
 
                             <td>
-                                {{ $pesanan_detail->jumlah }} item
+                                {{ $pesanan_detail->jumlah ?? 'barang sudah tidak tersedia'  }} item
                             </td>
 
                             <td>
-                                Rp. {{ number_format($pesanan_detail->barang->harga) }}
+                                Rp. {{ number_format($pesanan_detail->barang->harga) ?? 'barang sudah tidak tersedia'  }}
                             </td>
 
                             <td>
-                                Rp. {{ number_format($pesanan_detail->jumlah_harga) }}
+                                Rp. {{ number_format($pesanan_detail->jumlah_harga) ?? 'barang sudah tidak tersedia'  }}
                             </td>
 
                             <td>
