@@ -177,7 +177,7 @@
         </div>
     </div>
 
-                            <div class="form-group row">
+                            <!-- <div class="form-group row">
                                 <label for="password"
                                     class="col-md-2 col-form-label text-md-right">
                                     {{ __('Password') }}
@@ -197,9 +197,9 @@
                                         </span>
                                     @enderror
                                 </div>
-                            </div>
+                            </div> -->
 
-                            <div class="form-group row">
+                            <!-- <div class="form-group row">
                                 <label for="password-confirm"
                                     class="col-md-2 col-form-label text-md-right">
                                     {{ __('Confirm Password') }}
@@ -213,7 +213,7 @@
                                         
                                         autocomplete="new-password">
                                 </div>
-                            </div>
+                            </div> -->
 
                             <div class="form-group row mb-0">
                                 <div class="col-md-6 offset-md-4">
