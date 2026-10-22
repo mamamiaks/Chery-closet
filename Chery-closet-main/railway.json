@@ -1,0 +1,14 @@
+{
+  "$schema": "https://railway.app",
+  "build": {
+    "builder": "RAILPACK"
+  },
+  "deploy": {
+    "startCommand": "php artisan serve --host=0.0.0.0 --port=$PORT",
+    "restartPolicy": "ON_FAILURE",
+    "env": {
+      "APP_URL": "https://railway.app",
+      "APP_ENV": "production"
+    }
+  }
+}

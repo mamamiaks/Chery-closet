@@ -36,6 +36,9 @@ public function pesan(Request $request, $id)
     {
         return redirect('pesan/'.$id)->with('error', 'Jumlah pesan melebihi stok yang tersedia');
     }
+    if ($request ->jumlah_pesan == 0) {
+        return redirect('pesan/'.$id)->with('error', 'Jumlah pesanan tidak valid ');
+    }
 
     // Cek apakah user sudah punya pesanan aktif
     $cek_pesanan = Pesanan::where('user_id', Auth::user()->id)
